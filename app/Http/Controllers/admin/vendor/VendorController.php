@@ -82,7 +82,7 @@ class VendorController extends Controller
         $data->category_type = $request->category_type;
         $data->website_slug = $request->website_slug;
         $data->logo = $logoPath;
-        $data->status = false;
+        $data->status = true;
 
         // Save the Vendor and check if it's successful
         if ($data->save()) {
